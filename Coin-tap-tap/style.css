@@ -1,0 +1,395 @@
+body {
+    display: flex;
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* header */
+header {
+    display: flex;
+    background-color: #E0E0E0;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 82px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/* header-info */
+.logo {
+    width: 93.75px;
+    height: 40px;
+    padding-top: 21px;
+    padding-left: 120px;
+    padding-right: 0px;
+    padding-bottom: 21px;
+    margin: 0px;
+}
+nav {
+    display: flex;  
+    margin: 0px;
+    gap: 126px;
+}
+.home {
+    font-family: "Work Sans", serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #121212;
+    text-decoration: none;
+    margin: 0px;
+}
+.market {
+    font-family: "Work Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #61646B;
+    text-decoration: none;
+    margin: 0px;
+}
+.rating {
+    font-family: "Work Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #61646B;
+    text-decoration: none;
+    margin: 0px;
+}
+/* header-profile */
+.profile {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 120px;
+    margin: 0px;
+    gap: 12px;
+}
+.avatar {
+    width: 46.4px;
+    height: 46.4px;
+    border-radius: 100%;
+    border: 1px solid #AFB1B6;
+    margin: 0px;
+}
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px;
+    gap: 2px;
+}
+.name {
+    font-family: "Work Sans", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #61646B;
+    margin: 0px;
+}
+.coins {
+    display: flex;
+    margin: 0px;
+    gap: 8px;
+    margin: 0px;
+}
+.coin-icon {
+    width: 24px;
+    height: 24px;
+    margin: 0px;
+}
+.coins-total {
+    font-family: "Work Sans", serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #121212;
+    margin: 0px;
+}
+/* footer */
+footer {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+    background-color: #61646B;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-info {
+    display: flex;
+    gap: 96px;
+}
+.about-game {
+    font-family: "Work Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.help-center {
+    font-family: "Work Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.rules {
+    font-family: "Work Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+main {
+    display: flex;
+} 
+.main-info {
+    display: flex;
+    flex-direction: column;
+}
+/* cubes-stile */
+.cubes {
+    display: flex;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 120px;
+    margin-right: 0px;
+    max-height: calc(100vh - 82px - 72px - 59px);
+    overflow-y: auto;
+    mask-image: linear-gradient(to bottom, #FAFAFA calc(100% - 41px), rgba(250, 250, 250, 0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, #FAFAFA calc(100% - 41px), rgba(250, 250, 250, 0) 100%);
+    -webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+    }
+    scrollbar-width: none;
+}
+.cube {
+    box-sizing: border-box;
+    display: flex;
+    border: solid 1px #AFB1B6;
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 384px;
+    height: 108px;
+    padding: 0px;
+    transition: border-color 0.3s;
+    gap: 12px;
+}
+.cube:hover {
+    border: solid 1px #121212;
+}
+.picture-cube {
+    width: 46.4px;
+    height: 46.4px;
+    border: solid 1px #AFB1B6;
+    border-radius: 8px;
+    margin-left: 24px;
+    margin-top: 16px;
+    padding: 0px;
+}
+.cube-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    padding: 0px;
+    gap: 2px;
+}
+.title-cube {
+    font-family: "Work Sans", serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #121212;
+    margin: 0px;
+    padding: 0px;
+}
+.subtitle-cube {
+    font-family: "Work Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #61646B;
+    margin: 0px;
+}
+.price-cube {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    gap: 8px;
+}
+.coin-icon-cube {
+    width: 24px;
+    height: 24px;
+    margin: 0px;
+    padding: 0px; 
+}
+.coins-total-cube {
+    font-family: "Work Sans", serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+    color: #121212;
+    margin: 0px;
+    padding: 0px;
+}
+.button-cube {
+    display: flex;
+    background-color: #E0E0E0;
+    width: 59px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    align-items: center;
+    margin-right: 24px;
+    margin-top: 52px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    font-family: "Work Sans", serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #121212;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.button-cube:hover {
+    background-color: #121212;
+    color: #FFFFFF;
+}
+.arrow-down {
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+/* rectangles-stile */
+.rectangles {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 24px;
+    width: 792px;
+    height: 106px;
+    display: flex;
+}
+.first-rectangle {
+    display: flex;
+    box-sizing: border-box;
+    background-color: #43464D;
+    width: 264.67px;
+    height: 106px;
+    border: solid 1px #E0E0E0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0px;
+    gap: 12px;
+}
+.second-rectangle {
+    display: flex;
+    box-sizing: border-box;
+    background-color: #43464D;
+    width: 264.67px;
+    height: 106px;
+    border: solid 1px #E0E0E0;
+    padding: 0px;
+    gap: 12px;
+}
+.third-rectangle {
+    display: flex;
+    box-sizing: border-box;
+    background-color: #43464D;
+    width: 264.67px;
+    height: 106px;
+    border: solid 1px #E0E0E0;
+    padding: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    gap: 12px;
+}
+.picture-rectangle {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    margin-top: 25px;
+    margin-left: 24px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+.info-rectangle {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    gap: 2px;
+}
+.title-rectangle {
+    font-family: "Work Sans", serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+.subtitle-rectangle {
+    font-family: "Work Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #E0E0E0;
+    margin: 0px;
+}
+.big-coin {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin-left: 220px;
+    margin-top: 18px;
+}    
+.big-coin-img {
+    width: 398.4px;
+    height: 398.4px;
+    border-radius: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: solid 1px #AFB1B6;
+    cursor: pointer;
+}
