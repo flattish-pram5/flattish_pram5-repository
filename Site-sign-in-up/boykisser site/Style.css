@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    box-sizing: border-box;
+}
+.boykisser-logo {
+    width: 55px;
+    height: auto;
+    margin-left: 62px;
+    margin-top: 27px;
+}
+
+nav {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    background-color:#EE0000;
+    padding: 33px 33px;
+    border-radius: 20px 0px 0px 20px;
+}
