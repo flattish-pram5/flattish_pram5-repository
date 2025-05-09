@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="style-site-sign-in-up.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img src="Images-site-sign-in-up/logo.png" alt="Логотип" class="logo"> 
+        <h2 class="welcome">Welcome to {{Platform name}}</h2>
+        <h3 class="subtitle">Sign in</h3>
+
+        <form>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email">
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password-input">
+                <img src="Images-site-sign-in-up/eye-open.png" class="toggle-password" alt="toggle password" id="eye-icon" onclick="togglePassword()">
+            </div>
+
+            <button type="submit" class="black-button">Sign in</button>
+        </form>
+
+        <p class="login-text">Don't have account yet? <a class="link" href="site-sign-up.html">Sign up</a></p>
+    </div>
+
+    <script src="Scripts-site-sign-in-up/script-form-sign-in.js"></script>
+    <script src="Scripts-site-sign-in-up/script-toggle-password.js"></script>
+
+</body>
+</html>
